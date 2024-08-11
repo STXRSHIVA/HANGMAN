@@ -8,7 +8,7 @@ import { getAllCharacters } from "./MaskedTextUtility";
  */
 function MaskedText({text,usedLetters}){
 
-    const letters = getAllCharacterslCharacters(text,usedLetters).split('');
+    const letters = getAllCharacters(text,usedLetters).split('');
 
     return(
         <>
