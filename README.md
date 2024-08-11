@@ -52,6 +52,4 @@ To get started with the Hangman Game project, follow these steps:
 - **React Team:** For creating the React library.
 - **Tailwind CSS Team:** For creating the Tailwind CSS framework.
 
----
 
-Feel free to reach out with any questions or suggestions. Happy coding!
