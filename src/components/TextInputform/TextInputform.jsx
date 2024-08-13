@@ -5,7 +5,7 @@ function TextInputForm({ handleFormSubmit, handleTextInputChange,value,inputType
 
     return (
 
-        <form className="flex items-end" onSubmit={handleFormSubmit}>
+        <form className="flex items-end text-center w-1/2 justify-center" onSubmit={handleFormSubmit}>
             <div className="mr-2 flex-1">
                 <TextInput
                     value={value}
@@ -25,7 +25,7 @@ function TextInputForm({ handleFormSubmit, handleTextInputChange,value,inputType
 
             <div className="flex">
                 <Button
-                    text="OK"
+                    text="Submit"
                     buttonType="submit"
                 />
             </div>

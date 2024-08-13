@@ -10,7 +10,7 @@ function LetterButtons({text,usedLetters,onLetterClick}){
 
     const buttonStyle = function(letter){
         if(selectedLetters.has(letter)){
-            return  `bg-red-500 ${originalCharacters.has(letter) ? 'bg-green-500 border-green-700 hover:bg-green-700'  : 'border-[#000] border-4 hover-bg-red-700' } `
+            return  `bg-blue-500 ${originalCharacters.has(letter) ? 'bg-green-500 border-green-700 hover:bg-green-700'  : 'border-[#000] border-4 bg-red-500' } `
         }else{
             return ' bg-blue-500 border-blue-700 hover:bg-blue-700 ' 
 

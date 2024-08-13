@@ -6,26 +6,22 @@ import TextInputFormContainer from './components/TextInputform/TextInputFormCont
 import { Route, Routes } from 'react-router-dom'
 import PlayGame from './pages/PlayGamepage/PlayGame';
 import StartGame from './pages/StartGamepage/StartGame';
+import Homepage from './pages/Homepage/Homepage'
 
 
 function App() {
-  
 
   return (
-      // <div>
-      //   <h1 className='font-semibold text-3xl'>Welcome to Hangamn! </h1>
-      //   <TextInputFormContainer onSubmit={(value)=>{console.log("value coming from the hidden form is",value)}}/>
-
-      // </div>
-      <>
-        <div>NavBar </div>
-        <Routes>
-          <Route path='/play' element={<PlayGame/>}/>
-          <Route path='/start' element={<StartGame/>}/>
-          <Route path='*' element={<div>page not found</div>}/>
-        </Routes>
-      </>
-  )
+    <>
+      <div className="flex justify-center items-center flex-col">
+        <Homepage />
+      </div>
+      <Routes>
+        <Route path="/play" element={<PlayGame />} />
+        <Route path="/start" element={<StartGame />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;

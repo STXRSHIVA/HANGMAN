@@ -11,13 +11,13 @@ function MaskedText({text,usedLetters}){
     const letters = getAllCharacters(text,usedLetters).split('');
 
     return(
-        <>
+        <div className="text-5xl mt-5">
             {letters.map((letters,index) =>{
                 return(
                     <span key={`letter-${index}`} className=" mx-1">{letters}</span>
                 )
             })}
-        </>
+        </div>
     )
 
 }
